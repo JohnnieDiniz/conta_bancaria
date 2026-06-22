@@ -1,0 +1,158 @@
+<<<<<<< HEAD
+.metadata/ .settings/ bin/ tmp/ *.tmp *.bak *.swp *~.nib *.class 
+local.properties .DS_Store .settings/ .loadpath # External tool builders 
+.recommenders
+
+# External tool builders
+
+=======
+.metadata/
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.class
+local.properties
+.DS_Store
+.settings/
+.loadpath
+# External tool builders 
+.recommenders
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+<<<<<<< HEAD
+# PyDev specific (Python IDE for Eclipse) 
+=======
+# PyDev specific (Python IDE for Eclipse)
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+<<<<<<< HEAD
+# PDT-specific (PHP Development Tools) 
+=======
+# PDT-specific (PHP Development Tools)
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+<<<<<<< HEAD
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin 
+=======
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+<<<<<<< HEAD
+# Annotation Processing 
+=======
+# Annotation Processing
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+.apt_generated/
+.apt_generated_test/
+
+# Scala IDE specific (Scala & Java development for Eclipse) 
+.cache-main 
+<<<<<<< HEAD
+.scala_dependencies
+=======
+.scala_dependencies 
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+.worksheet
+
+# Eclipse / STS 
+.project 
+.classpath 
+<<<<<<< HEAD
+.settings/ 
+.springBeans
+
+# Maven 
+=======
+.settings/
+.springBeans
+
+# Maven
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+target/
+
+# Gradle 
+.gradle/
+build/
+
+<<<<<<< HEAD
+# Java
+*.class
+
+# macOS
+.DS_Store
+
+# Logs 
+*.log
+# Arquivos do macOS
+.DS_Store
+=======
+
+# Java
+*.class
+
+
+# macOS
+.DS_Store
+
+
+# Logs
+*.log
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+
+# Eclipse / STS 
+.project 
+.classpath
+.settings/
+
+<<<<<<< HEAD
+# Java 
+*.class 
+# Maven 
+target/ 
+=======
+
+# Java
+*.class 
+
+# Maven
+target/
+
+>>>>>>> ca3368d (:sparkles: Metodo Construtor)
+# Logs
+*.log
