@@ -2,56 +2,19 @@ package conta_bancaria;
 
 import java.util.Scanner;
 
-import conta_bancaria.model.Conta;
+import ContaController.ContaController;
 import conta_bancaria.model.ContaCorrente;
+import conta_bancaria.model.ContaPoupanca;
 import conta_bancaria.util.Cores;
 
 public class MenuPrincipal {
+	
+	private static final Scanner leia = new Scanner(System.in);
+	private static final ContaController contaController = new ContaController();
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Scanner leia = new Scanner(System.in);
 		
 		int opcao; 
-		
-		/* Instanciar Objetos da classe Conta */
-		
-		/*
-		Conta c1 = new Conta(1,123, 1, "Isabela", 200000.00f);
-		c1.visualizar();
-		
-		Conta c2 = new Conta(2,123, 2, "Thiago", 100000.00f);
-		c2.visualizar();
-		
-		c1.setSaldo(300000.00f);
-		c1.visualizar();
-		
-		
-		 * if ternário 
-		 * 
-		 * condição ? ação se for verdadeiro : se for falso 
-		
-		System.out.println("\nSacar R$ 3000000,00 da conta C2: " + (c2.sacar(1000.00f) ?
-							"Saque efetuado com Sucesso" : "Saldo insuficiente"));
-		c2.visualizar();
-		
-		Deposito 
-		
-		c2.depositar(50000.00f);
-		c2.visualizar();
-		*/
-		
-		ContaCorrente cc1 = new ContaCorrente(3, 789, 1, "Raquel", 200000.00f, 2000.00f);
-		cc1.visualizar();
-		
-		System.out.println("\nSacar R$ 203.000,00 da conta C2: " + (cc1.sacar(203000.00f) ?
-				"Saque efetuado com Sucesso" : "Saldo insuficiente"));
-		
-		System.out.println("\nSacar R$ 203.000,00 da conta C2: " + (cc1.sacar(202000.00f) ?
-				"Saque efetuado com Sucesso | Saldo: " + cc1.getSaldo() : "Saldo insuficiente"));
-		cc1.depositar(2000.00f);
-		cc1.visualizar();
 		
 		do {
 			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND);
@@ -80,6 +43,7 @@ public class MenuPrincipal {
 				case 2:
 					leia.nextLine();
 					System.out.print(" ---- Listar todas as contas ----");
+					
 					break;
 				case 3:
 					leia.nextLine();
@@ -113,12 +77,24 @@ public class MenuPrincipal {
 					default:
 						System.out.println("Opção Iválida!");
 		}
-			
-		} while (opcao !=9);
+		
+		} 
+		while (opcao !=9);
+	}
 	
+		public static void criarContasTestes() {
+			contaController.cadastrar(new ContaCorrente(contaController.gerarNumero(), 456, 1, "Thuany Silva", 1000000.00f, 100000.00f));
+			contaController.cadastrar(new ContaPoupanca(contaController.gerarNumero(), 456, 2, "Marcia Condarco", 1000000.00f, 10));
+		}
+		public static void listarContas() {
+			contaController.listarTodas();
+		}
+		{
 		
 		leia.close();
 
+		
 	}
 
 }
+
