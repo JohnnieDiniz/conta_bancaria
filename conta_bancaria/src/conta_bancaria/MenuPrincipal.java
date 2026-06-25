@@ -272,7 +272,7 @@ public class MenuPrincipal {
 				int aniversario = contaPoupanca.getAniversario();
 
 				// Atualiza o aniversario ou mantém o valor atual
-				System.out.printf("Dia do aniversário atual: %.2f" + "%nDigite o novo dia do aniversário da conta "
+				System.out.printf("Dia do aniversário atual: %.d" + "%nDigite o novo dia do aniversário da conta "
 						+ "(Pressione ENTER para manter o valor atual)", aniversario);
 				entrada = leia.nextLine();
 
