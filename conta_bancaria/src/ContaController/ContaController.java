@@ -98,7 +98,7 @@ public class ContaController implements ContaRepository {
 		Optional<Conta> conta = buscarNaCollection(numero);
 
 		if (conta.isPresent()) {
-			 conta.get().sacar(valor);
+			 conta.get().depositar(valor);
 				System.out.printf("\nO deposito no valor de: R$%.2f, na conta: %d foi efetuado com sucesso! ", valor, numero);
 
 		} else 
